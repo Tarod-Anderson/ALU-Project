@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1730478172">
+  <File Type="PA-TCL" Name="ta0389_LB3.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="ta0389_LB3_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="ta0389_LB3_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ta0389_LB3.vds"/>
+  <File Type="RDS-UTIL" Name="ta0389_LB3_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ta0389_LB3_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ta0389_LB3.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ta0389_LB3_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ta0389_LB3_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ta0389_LB3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ta0389_LB3"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Nexys-4-DDR-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1727111615"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

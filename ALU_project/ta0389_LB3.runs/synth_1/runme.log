@@ -1,0 +1,291 @@
+
+*** Running vivado
+    with args -log ta0389_LB3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ta0389_LB3.tcl
+
+
+
+****** Vivado v2024.1.1 (64-bit)
+  **** SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+  **** IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+  **** SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+  **** Start of session at: Fri Nov  1 11:22:56 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ta0389_LB3.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 663.070 ; gain = 233.363
+Command: synth_design -top ta0389_LB3 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3168
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1531.199 ; gain = 446.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ta0389_LB3' [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/sources_1/new/ta0389_LB3.vhd:15]
+INFO: [Synth 8-226] default block is never used [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/sources_1/new/ta0389_LB3.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ta0389_LB3' (0#1) [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/sources_1/new/ta0389_LB3.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1640.973 ; gain = 555.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1640.973 ; gain = 555.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1640.973 ; gain = 555.867
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1640.973 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK100MHZ]'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'B(0)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'B(1)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'B(2)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'B(3)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'A(0)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'A(1)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'A(2)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'A(3)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel(0)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel(1)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel(2)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'F(0)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'F(1)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'F(2)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'F(3)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'F(4)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'F(5)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'F(6)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'F(7)'. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ta0389/ta0389_LB3/ta0389_LB3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1664.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1664.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT2   |     5|
+|4     |LUT3   |     6|
+|5     |LUT4   |     5|
+|6     |LUT5   |    16|
+|7     |LUT6   |    53|
+|8     |MUXF7  |    12|
+|9     |MUXF8  |     1|
+|10    |FDRE   |     8|
+|11    |IBUF   |    12|
+|12    |OBUF   |     8|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1664.133 ; gain = 579.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1664.133 ; gain = 555.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1664.133 ; gain = 579.027
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1664.133 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1664.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 804011bf
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 22 Warnings, 21 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1664.133 ; gain = 1001.062
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1664.133 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ta0389/ta0389_LB3/ta0389_LB3.runs/synth_1/ta0389_LB3.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ta0389_LB3_utilization_synth.rpt -pb ta0389_LB3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  1 11:23:30 2024...
